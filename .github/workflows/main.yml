@@ -207,6 +207,7 @@ jobs:
       - name: Install Haxelib
         run: |
           haxelib install hxnodejs
+          haxelib --global install hxpkg
       - name: Compile hxcpp
         run: |
           cd ~/haxelib/hxcpp/git/tools/run
