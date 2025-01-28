@@ -43,6 +43,10 @@ jobs:
             export/release/linux/haxe/
             export/release/linux/obj/
           key: cache-linux-build
+
+      - name: Make git happeh
+        run: |
+          git submodule update --init --recursive
       # Runs a set of commands using the runners shell
       - name: Install Haxelib
         run: |
@@ -117,6 +121,10 @@ jobs:
             export/release/windows/haxe/
             export/release/windows/obj/
           key: cache-windows-build
+
+      - name: Make git happeh
+        run: |
+          git submodule update --init --recursive
       # Runs a set of commands using the runners shell
       - name: Install Haxelib
         run: |
@@ -191,6 +199,10 @@ jobs:
             export/release/macos/haxe/
             export/release/macos/obj/
           key: cache-macos-build
+      
+      - name: Make git happeh
+        run: |
+          git submodule update --init --recursive
       # Runs a set of commands using the runners shell
       - name: Install Haxelib
         run: |
