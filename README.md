@@ -1,169 +1,93 @@
-# Changelog
-All notable changes will be documented in this file.
+# Friday Night Funkin
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+This is the repository for Friday Night Funkin, a game originally made for Ludum Dare 47 "Stuck In a Loop".
 
-## [UNRELEASED]
-### Added
-- Cool waveform stuff for chart editor
-- Noises in chart editor lol!
-- 3 AWESOME PICO VS. DARNELL SONGS!!
-- Character offset editor / spritesheet viewer
-## Changed
-- Health gain is different depending on how accurate you hit notes!
-- slight less health gained on sustain notes
-- The wave-y effect on Thorns for the school is now a shader, instead of a pre-baked animation!
+Play the Ludum Dare prototype here: https://ninja-muffin24.itch.io/friday-night-funkin
+Play the Newgrounds one here: https://www.newgrounds.com/portal/view/770371
+Support the project on the itch.io page: https://ninja-muffin24.itch.io/funkin
 
-## [0.2.8] - 2021-04-18 (note, this one is iffy cuz we slacked wit it lol!)
-### Added
-- TANKMAN! 3 NEW SONGS BY KAWAISPRITE (UGH, GUNS, STRESS)! Charting help by MtH!
-- Monster added into week 2, FINALLY (Charting help by MtH and ChaoticGamer!)
-- Can now change song difficulty mid-game.
-- Shows some song info on pause screen.
-- Cute little icons onto freeplay menu
-- Offset files for easier modification of characters
-### Changed
-- ASSET LOADING OVERHAUL, WAY FASTER LOAD TIMES ON WEB!!! (THANKS TO GEOKURELI WOKE KING)
-- Made difficulty selector on freeplay menu more apparent
-### Fixed
-- That one random note on Bopeebo
+IF YOU MAKE A MOD AND DISTRIBUTE A MODIFIED / RECOMIPLED VERSION, YOU MUST OPEN SOURCE YOUR MOD AS WELL
 
-## [0.2.7.1] - 2021-02-14
-### Added
-- Easter eggs
-- readme's in desktop versions of the game
-### Changed
+## Credits / shoutouts
 
-- New icons, old one was placeholder since October woops!
-- Made the transitions between the story mode levels more seamless.
-- Offset of the Newgrounds logo on boot screen.
-- Made the changelog txt so it can be opened easier by normal people who don't have a markdown reader (most normal people);
-### Fixed
-- Fixed crashes on Week 6 story mode dialogue if spam too fast ([Thanks to Lotusotho for the Pull Request!](https://github.com/ninjamuffin99/Funkin/pull/357))
-- Should show intro credits on desktop versions of the game more consistently
-- Layering on Week 4 songs with GF and the LIMO LOL HOW TF I MISS THIS
-- Chart's and chart editor now support changeBPM, GOD BLESS MTH FOR THIS ONE I BEEN STRUGGLIN WIT THAT SINCE OCTOBER LMAO ([GOD BLESS MTH](https://github.com/ninjamuffin99/Funkin/pull/382))
-- Fixed sustain note trails ALSO THANKS TO MTH U A REAL ONE ([MTH VERY POWERFUL](https://github.com/ninjamuffin99/Funkin/pull/415))
-- Antialiasing on the skyscraper lights
+- [ninjamuffin99 (me!)](https://twitter.com/ninja_muffin99) - Programmer
+- [PhantomArcade3K](https://twitter.com/phantomarcade3k) and [Evilsk8r](https://twitter.com/evilsk8r) - Art
+- [Kawaisprite](https://twitter.com/kawaisprite) - Musician
 
-## [0.2.7] - 2021-02-02
-### Added
-- PIXEL DAY UPDATE LOL 1 WEEK LATER
-- 3 New songs by Kawaisprite!
-- COOL CUTSCENES
-- WEEK 6 YOYOYOYOY
-- Swaggy pixel art by Moawling!
-### Changed
-- Made it so you lose sliiiightly more health when you miss a note.
-- Removed the default HaxeFlixel pause screen when the game window loses focus, can get screenshots of the game easier hehehe
-### Fixed
-- Idle animation bug with BF christmas and BF hair blow sprites ([Thanks to Injourn for the Pull Request!](https://github.com/ninjamuffin99/Funkin/pull/237))
+This game was made with love to Newgrounds and it's community. Extra love to Tom Fulp.
 
-## [0.2.6] - 2021-01-20
-### Added
-- 3 NEW CHRISTMAS SONGS. 2 BY KAWAISPRITE, 1 BY BASSETFILMS!!!!! BF WITH DRIP! SANTA HANGIN OUT!
-- Enemy icons change when they you are winning a lot ([Thanks to pahaze for the Pull Request!](https://github.com/ninjamuffin99/Funkin/pull/138))
-- Holding CTRL in charting editor places notes on both sides
-- Q and E changes sustain lengths in note editor
-- Other charting editor workflow improvements
-- More hair physics
-- Heads appear at top of chart editor to help show which side ur charting for
-### Changed
-- Tweaked code relating to inputs, hopefully making notes that are close together more fair to hit
-### Removed
-- Removed APE
-### Fixed
-- Maybe fixed double notes / jump notes. Need to tweak it for balance, but should open things up for cooler charts in the future.
-- Old Verison popup screen weirdness ([Thanks to gedehari for the Pull Request!](https://github.com/ninjamuffin99/Funkin/pull/155))
-- Song no longer loops when finishing the song. ([Thanks Injourn for the Pull Request!](https://github.com/ninjamuffin99/Funkin/pull/132))
-- Screen wipe being cut off in the limo/mom stage. Should fill the whole screen now.
-- Boyfriend animations on hold notes, and pressing on repeating notes should behave differently
+## Build instructions
 
-## [0.2.5] - 2020-12-27
-### Added
-- MOMMY GF, 3 NEW ASS SONGS BY KAWAISPRITE, NEW ART BY PHANTOMARCADE,WOOOOOOAH!!!!
-- Different icons depending on which character you are against, art by EVILSK8R!!
-- Autosave to chart editor
-- Clear section button to note editor
-- Swap button in note editor
-- a new boot text or two
-- automatic check for when you're on an old version of the game! 
-### Changed
-- Made Spookeez on Normal easier.
-- Mouse is now visible in note editor
-### Fixed
-- Crash when playing Week 3 and then playing a non-week 3 song
-- When pausing music at the start, it doesn't continue the song anyways. ([shoutouts gedehari for the Pull Request!](https://github.com/ninjamuffin99/Funkin/pull/48))
-- IDK i think backing out of song menu should play main menu songs again hehe ([shoutouts gedehari for the Pull Request!](https://github.com/ninjamuffin99/Funkin/pull/48))
+THESE INSTRUCTIONS ARE FOR COMPILING THE GAME'S SOURCE CODE!!!
 
-## [0.2.4] - 2020-12-11
-### Added
-- 3 NEW SONGS BY KAWAISPRITE. Pico, Philly, and Blammed.
-- NEW CHARACTER, PICO. Based off the classic Flash game "Pico's School" by Tom Fulp
-- NEW LEVEL WOW! PHILLY BABEEEE
-### Changed
-- Made it less punishing to ATTEMPT to hit a note and miss, rather than let it pass you
-### Fixed
-- Song desync of you paused and unpaused frequently ([shoutouts SonicBlam](https://github.com/ninjamuffin99/Funkin/issues/37))
-- Animation offsets when GF is scared
+IF YOU WANT TO JUST DOWNLOAD AND INSTALL AND PLAY THE GAME NORMALLY, GO TO ITCH.IO TO DOWNLOAD THE GAME FOR PC, MAC, AND LINUX!!
 
-## [0.2.3] - 2020-12-04
-### Added
-- More intro texts
-### Fixed
-- Exploit where you could potentially give yourself a high score via the debug menu
-- Issue/bug where you could spam the confirm button on the story menu ([shoutouts lotusotho for the CODE contribution/pull request!](https://github.com/ninjamuffin99/Funkin/pull/19))
-- Glitch where if you never would lose health if you missed a note on a fast song (shoutouts [MrDulfin](https://github.com/ninjamuffin99/Funkin/issues/10), [HotSauceBurritos](https://github.com/ninjamuffin99/Funkin/issues/13) and [LobsterMango](https://lobstermango.newgrounds.com))
-- Fixed tiny note bleed over thingies (shoutouts [lotusotho](https://github.com/ninjamuffin99/Funkin/pull/24))
+https://ninja-muffin24.itch.io/funkin
 
-## [0.2.2] - 2020-11-20
-### Added
-- Music playing on the freeplay menu.
-- UI sounds on freeplay menu
-- Score now shows mid-song.
-- Menu on pause screen! Can resume, and restart song, or go back to main menu.
-- New music made for pause menu!
+IF YOU WANT TO COMPILE THE GAME YOURSELF, CONTINUE READING!!!
 
-### Changed
-- Moved all the intro texts to its own txt file instead of being hardcoded, this allows for much easier customization. File is in the data folder, called "introText.txt", follow the format in there and you're probably good to go!
-### Fixed
-- Fixed soft lock when pausing on song finish ([shoutouts gedehari](https://github.com/ninjamuffin99/Funkin/issues/15))
-- Think I fixed issue that led to in-game scores being off by 2 ([shoutouts Mike](https://github.com/ninjamuffin99/Funkin/issues/4))
-- Should have fixed the 1 frame note appearance thing. ([shoutouts Mike](https://github.com/ninjamuffin99/Funkin/issues/6))
-- Cleaned up some charting on South on hard mode
-- Fixed some animation timings, should feel both better to play, and watch. (shoutouts Dave/Ivan lol)
-- Animation issue where GF would freak out on the title screen if you returned to it([shoutouts MultiXIII](https://github.com/ninjamuffin99/Funkin/issues/12)).
+### Installing the Required Programs
 
-## [0.2.1.2] - 2020-11-06
-### Fixed
-- Story mode scores not properly resetting, leading to VERY inflated highscores on the leaderboards. This also requires me to clear the scores that are on the leaderboard right now, sorry!
-- Difficulty on storymode and in freeplay scores
-- Hard mode difficulty on campaign levels have been fixed
+First you need to install Haxe and HaxeFlixel. I'm too lazy to write and keep updated with that setup (which is pretty simple). 
+1. [Install Haxe 4.1.5](https://haxe.org/download/version/4.1.5/) (Download 4.1.5 instead of 4.2.0 because 4.2.0 is broken and is not working with gits properly...)
+2. [Install HaxeFlixel](https://haxeflixel.com/documentation/install-haxeflixel/) after downloading Haxe
 
-## [0.2.1.1] - 2020-11-06
-### Fixed
-- Week 2 not unlocking properly
+Other installations you'd need is the additional libraries, a fully updated list will be in `Project.xml` in the project root. Currently, these are all of the things you need to install:
+```
+flixel
+flixel-addons
+flixel-ui
+hscript
+newgrounds
+```
+So for each of those type `haxelib install [library]` so shit like `haxelib install newgrounds`
 
-## [0.2.1] - 2020-11-06
-### Added
-- Scores to the freeplay menu
-- A few new intro boot messages.
-- Lightning effect in Spooky stages
-- Campaign scores, can now compete on scoreboards for campaign!
-- Can now change difficulties in Freeplay mode
+You'll also need to install a couple things that involve Gits. To do this, you need to do a few things first.
+1. Download [git-scm](https://git-scm.com/downloads). Works for Windows, Mac, and Linux, just select your build.
+2. Follow instructions to install the application properly.
+3. Run `haxelib git polymod https://github.com/larsiusprime/polymod.git` to install Polymod.
+4. Run `haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc` to install Discord RPC.
 
-### Changed
-- Balanced out Normal mode for the harder songs(Dadbattle and Spookeez, not South yet). Should be much easier all around.
-- Put tutorial in it's own 'week', so that if you want to play week 1, you don't have to play the tutorial.
+You should have everything ready for compiling the game! Follow the guide below to continue!
 
-### Fixed
-- One of the charting bits on South and Spookeez during the intro.
+At the moment, you can optionally fix the transition bug in songs with zoomed out cameras.
+- Run `haxelib git flixel-addons https://github.com/HaxeFlixel/flixel-addons` in the terminal/command-prompt.
 
-## [0.2.0] - 2020-11-01
-### Added
-- Uhh Newgrounds release lolol I always lose track of shit.
+### Ignored files
 
-## [0.1.0] - 2020-10-05
-### Added
-- Uh, everything. This the game's initial gamejam release. We put it out
+I gitignore the API keys for the game, so that no one can nab them and post fake highscores on the leaderboards. But because of that the game
+doesn't compile without it.
+
+Just make a file in `/source` and call it `APIStuff.hx`, and copy paste this into it
+
+```haxe
+package;
+
+class APIStuff
+{
+	inline public static var API:String = "51348:TtzK0rZ8";
+	inline public static var EncKey:String = "5NqKsSVSNKHbF9fPgZPqPg==";
+	inline public static var SESSION:String = null;
+}
+
+```
+
+and you should be good to go there.
+
+### Compiling game
+
+Once you have all those installed, it's pretty easy to compile the game. You just need to run 'lime test html5 -debug' in the root of the project to build and run the HTML5 version. (command prompt navigation guide can be found here: [https://ninjamuffin99.newgrounds.com/news/post/1090480](https://ninjamuffin99.newgrounds.com/news/post/1090480))
+
+To run it from your desktop (Windows, Mac, Linux) it can be a bit more involved. For Linux, you only need to open a terminal in the project directory and run 'lime test linux -debug' and then run the executable file in export/release/linux/bin. For Windows, you need to install Visual Studio Community 2019. While installing VSC, don't click on any of the options to install workloads. Instead, go to the individual components tab and choose the following:
+* MSVC v142 - VS 2019 C++ x64/x86 build tools
+* Windows SDK (10.0.17763.0)
+
+Once that is done you can open up a command line in the project's directory and run `lime test windows -debug`. Once that command finishes (it takes forever even on a higher end PC), you can run FNF from the .exe file under export\release\windows\bin
+As for Mac, 'lime test mac -debug' should work, if not the internet surely has a guide on how to compile Haxe stuff for Mac.
+
+### Additional guides
+
+- [Command line basics](https://ninjamuffin99.newgrounds.com/news/post/1090480)
+
+
+Commits are generally signed and verified, as of September 8th, 2021! Using GPG!
