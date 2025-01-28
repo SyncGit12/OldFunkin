@@ -49,16 +49,16 @@ jobs:
           git submodule update --init --recursive
 
       - name: Get checkout token
-      uses: actions/create-github-app-token@v1
-      id: app_token
-      with:
+        uses: actions/create-github-app-token@v1
+        id: app_token
+        with:
         app-id: ${{ vars.APP_ID }}
         private-key: ${{ secrets.APP_PEM }}
         owner: ${{ github.repository_owner }}
 
-    - name: Checkout repo
-      uses: funkincrew/ci-checkout@v6
-      with:
+      - name: Checkout repo
+        uses: funkincrew/ci-checkout@v6
+        with:
         submodules: 'recursive'
         token: ${{ steps.app_token.outputs.token }}
         persist-credentials: false
