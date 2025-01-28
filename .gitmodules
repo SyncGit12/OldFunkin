@@ -1,0 +1,6 @@
+[submodule "assets"]
+	path = assets
+	url = https://github.com/FunkinCrew/funkin.assets/commit/321a581eaeea23ae70316c61ed24fbe21ab4ba82
+[submodule "art"]
+	path = art
+	url = https://github.com/FunkinCrew/funkin.art/commit/f671b9f445cbdf3f4aa1218330e72692f3f57b06
