@@ -18,6 +18,9 @@ on:
         required: false
         type: string
 
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -47,7 +50,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Install Haxelib
         run: |
-          haxelib install hxnodejs
+          haxelib --global install hxpkg
+          haxelib --global run hxpkg install --force
       - name: Compile hxcpp
         run: |
           cd ~/haxelib/hxcpp/git/tools/run
