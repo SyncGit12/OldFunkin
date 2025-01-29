@@ -29,7 +29,7 @@ jobs:
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@source
+      #- uses: actions/checkout@source
 
       - uses: krdlab/setup-haxe@master
         with:
@@ -129,7 +129,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Install Haxelib
         run: |
-          haxelib install hxnodejs
+          haxelib --global install hxpkg
+          haxelib --global run hxpkg install --force
         shell: cmd
       - name: Compile hxcpp
         run: |
@@ -207,8 +208,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Install Haxelib
         run: |
-          haxelib install hxnodejs
           haxelib --global install hxpkg
+          haxelib --global run hxpkg install --force
       - name: Compile hxcpp
         run: |
           cd ~/haxelib/hxcpp/git/tools/run
