@@ -7,9 +7,9 @@ name: Build
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ source ]
+    branches: [ main ]
   pull_request:
-    branches: [ source ]
+    branches: [ main ]
 
 # For release builds
   workflow_call:
@@ -29,7 +29,7 @@ jobs:
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@main
+      - uses: actions/checkout@source
 
       - uses: krdlab/setup-haxe@master
         with:
@@ -108,7 +108,7 @@ jobs:
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@main
+      - uses: actions/checkout@source
 
       - uses: krdlab/setup-haxe@master
         with:
@@ -186,7 +186,7 @@ jobs:
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@main
+      - uses: actions/checkout@source
 
       - uses: krdlab/setup-haxe@master
         with:
